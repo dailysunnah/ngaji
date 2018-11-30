@@ -1,0 +1,7 @@
+{
+  "name": "ngaji",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
