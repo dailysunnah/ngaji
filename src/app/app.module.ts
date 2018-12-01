@@ -9,13 +9,17 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DoaPage } from '../pages/doa/doa';
+import { DoaPagiPage } from '../pages/doa-pagi/doa-pagi';
+import { DoaPetangPage } from '../pages/doa-petang/doa-petang';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    DoaPage
+    DoaPage,
+    DoaPagiPage,
+    DoaPetangPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,9 @@ import { DoaPage } from '../pages/doa/doa';
     MyApp,
     HomePage,
     ListPage,
-    DoaPage
+    DoaPage,
+    DoaPagiPage,
+    DoaPetangPage
   ],
   providers: [
     StatusBar,
