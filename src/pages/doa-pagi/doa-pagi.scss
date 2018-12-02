@@ -1,3 +1,40 @@
-page-doa-pagi {
-
+@font-face {
+    font-family: 'Scheherazade';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../assets/fonts/Scheherazade-Regular.ttf');
+    src: url('../assets/fonts/Scheherazade-Bold.ttf');
+}
+@font-face {
+    font-family: 'freestyle';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../assets/fonts/FREESCPT.TTF');
+    src: url('../assets/fonts/freestylescriptplain.otf');
+}
+@font-face {
+    font-family: 'noto';
+    font-weight: 50;
+    font-style: normal;
+    src: url('../assets/fonts/noto-sans-regular.ttf');
+    src: url('../assets/fonts/noto-sans-bold.ttf');
+}
+@font-face {
+    font-family: 'roboto';
+    font-weight: 50;
+    font-style: normal;
+    src: url('../assets/fonts/roboto-light.ttf');
+    src: url('../assets/fonts/roboto-bold.ttf');
+}
+.arabic-text {
+    font: 1em Scheherazade;
+}
+.translator{
+    font:0.8em noto;
+}
+.resep{
+    font:0.6em noto;
+}
+.sanad{
+    font:0.8em roboto;
 }

@@ -3,16 +3,40 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Ayo Ngaji</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <h3>Do'a Harian Muslim</h3>
 
-  <p>
-    Kumpulan Do'a berdasarkan Sunnah Rasulullah Shalallahu 'Alaihi Wa Salam'.
-  </p>
-
-  <button ion-button secondary menuToggle>Menu</button>
+  <ion-card>
+    <ion-card-header>Do'a berdasarkan Sunnah Nabi</ion-card-header>
+    <ion-list>
+      <button ion-item (click)="gotoDoaPagiPage()">
+        <ion-icon name='sunny' item-start></ion-icon>
+        Do'a Pagi
+      </button>
+    </ion-list>
+    <ion-list>
+      <button ion-item (click)="gotoDoaPetangPage()">
+        <ion-icon name='moon' item-start></ion-icon>
+        Do'a Petang
+      </button>
+    </ion-list>
+  </ion-card>
+  <ion-card>
+    <img width="20" src="../../assets/imgs/logo-ayo-ngaji.svg"/>
+    <ion-card-content>
+      <ion-card-title>
+      <p class="smalltext">
+        <a href="https://www.facebook.com/ayongajidukuhtengah/">https://www.facebook.com/ayongajidukuhtengah/</a>  
+      </p>
+      </ion-card-title>
+      <p>
+        Majelis Ta'lim Roudhotul Jannah, Dukuh Tengah - Buduran Sidoarjo.
+      </p>
+    </ion-card-content>
+  </ion-card>
+  
 </ion-content>
