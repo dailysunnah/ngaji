@@ -4,8 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
-import { DoaPage } from '../pages/doa/doa';
 import { DoaPagiPage } from '../pages/doa-pagi/doa-pagi';
 import { DoaPetangPage } from '../pages/doa-petang/doa-petang';
 
