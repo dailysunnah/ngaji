@@ -16,6 +16,7 @@ import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angu
 export class DoaPetangPage {
   show_translate = false
   show_info = false
+  arabic_text = "arabic-text"
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
@@ -48,5 +49,31 @@ export class DoaPetangPage {
     }else{
       this.show_info = false;
     }
+  }
+  zoomIn(){
+    switch(this.arabic_text){
+      case 'arabic-text':
+      this.arabic_text = 'arabic-text-bigger'
+      break
+      case 'arabic-text-bigger':
+      this.arabic_text = 'arabic-text-biggest'
+      break
+      case 'arabic-text-biggest':
+      this.arabic_text = 'arabic-text'
+      break
+    }    
+  }
+  zoomOut(){
+    switch(this.arabic_text){
+      case 'arabic-text':
+      this.arabic_text = 'arabic-text-biggest'
+      break
+      case 'arabic-text-biggest':
+      this.arabic_text = 'arabic-text-bigger'
+      break
+      case 'arabic-text-bigger':
+      this.arabic_text = 'arabic-text'
+      break
+    }    
   }
 }
