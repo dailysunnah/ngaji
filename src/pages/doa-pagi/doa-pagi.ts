@@ -17,6 +17,7 @@ export class DoaPagiPage {
   show_translate = false
   show_info = false
   arabic_text = "arabic-text"
+  tap_count = 0;
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
@@ -50,6 +51,15 @@ showInfo(){
   }else{
     this.show_info = false;
   }
+}
+dblTap(){
+  this.tap_count++
+  setTimeout(()=>{
+    if(this.tap_count>1){
+      this.zoomIn()
+      this.tap_count = 0
+    }
+  },250)
 }
 zoomIn(){
   switch(this.arabic_text){

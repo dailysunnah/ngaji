@@ -17,6 +17,7 @@ export class DoaPetangPage {
   show_translate = false
   show_info = false
   arabic_text = "arabic-text"
+  tap_count = 0
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
@@ -26,6 +27,15 @@ export class DoaPetangPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DoaPetangPage');
+  }
+  dblTap(){
+    this.tap_count++
+    setTimeout(()=>{
+      if(this.tap_count>1){
+        this.zoomIn()
+        this.tap_count = 0
+      }
+    },250)
   }
   showHint(){
     const toast = this.toastController.create({
