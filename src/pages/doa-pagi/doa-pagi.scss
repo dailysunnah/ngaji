@@ -2,8 +2,8 @@
     font-family: 'Scheherazade';
     font-weight: 300;
     font-style: normal;
-    src: url('../assets/fonts/Scheherazade-Regular.ttf');
-    src: url('../assets/fonts/Scheherazade-Bold.ttf');
+    src: url('../../../www/assets/fonts/Scheherazade-Regular.ttf');
+    src: url('../../../www/assets/fonts/Scheherazade-Bold.ttf');
 }
 @font-face {
     font-family: 'freestyle';
@@ -25,6 +25,13 @@
     font-style: normal;
     src: url('../assets/fonts/roboto-light.ttf');
     src: url('../assets/fonts/roboto-bold.ttf');
+}
+@font-face {
+    font-family:'islamicicon';
+    src:url('../../assets/fonts/font_islamic_color.ttf')
+}
+.arabic-sign{
+    font: 1em islamicicon;
 }
 .arabic-text {
     font: 1em Scheherazade;
