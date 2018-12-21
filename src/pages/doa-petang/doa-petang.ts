@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, ToastController, Content } from 'ionic-angular';
 
 /**
  * Generated class for the DoaPetangPage page.
@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angu
   templateUrl: 'doa-petang.html',
 })
 export class DoaPetangPage {
+  @ViewChild(Content) pageTop:Content
   show_translate = false
   show_info = false
   arabic_text = "arabic-text"
@@ -85,5 +86,10 @@ export class DoaPetangPage {
       this.arabic_text = 'arabic-text'
       break
     }    
+  }
+  swipeevent(){
+    console.log("swipe event invoked 1")
+    this.pageTop.scrollToTop();
+    console.log("swipe event invoked 2")
   }
 }

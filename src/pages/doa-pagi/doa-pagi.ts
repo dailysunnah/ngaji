@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ToastController } from 'ionic-angular'
+import { ToastController,Content } from 'ionic-angular'
 /**
  * Generated class for the DoaPagiPage page.
  *
@@ -14,6 +14,7 @@ import { ToastController } from 'ionic-angular'
   templateUrl: 'doa-pagi.html',
 })
 export class DoaPagiPage {
+  @ViewChild(Content) pageTop:Content
   show_translate = false
   show_info = false
   arabic_text = "arabic-text"
@@ -86,6 +87,11 @@ zoomOut(){
     this.arabic_text = 'arabic-text'
     break
   }    
+}
+swipeevent(){
+  console.log("swipe event invoked 1")
+  this.pageTop.scrollToTop();
+  console.log("swipe event invoked 2")
 }
 
 }
